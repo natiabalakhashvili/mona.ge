@@ -24,7 +24,7 @@ header{
 	width: 100%;
 	position: fixed;
 	z-index: 1000;
-	background: white;
+	background: rgba(255,255,255,0.8);
 	top: 0;
 	left: 0;
 	transition: 0.6s;
@@ -35,8 +35,8 @@ header.down{
 	transition: 1s;
 }
 .logo{
-	width: 20%;
-	background-color: white; 
+	width: 80px;
+	/*background-color: white; */
 	padding: 20px 0;
 }
 .logooo{
@@ -46,8 +46,8 @@ header.down{
 	height: 40px;
 }
 .menu{
-	width: 55%;
-	background-color: white;
+	width: 500px;
+	/*background-color: white;*/
 	padding: 2.5px 20px;
 	display: flex;
 	justify-content: space-between;
@@ -74,8 +74,8 @@ header.down{
 	transition: 0.3s;
 }
 .search{
-	width: calc(25% - 140px);
-	background-color: white;
+	width: calc(54% - 140px);
+	background-color: transparent;
 	padding: 15px 0;
 	text-align: right;
 	border: none;
@@ -164,9 +164,9 @@ header.down{
 	padding-bottom: 80px;
 }
 .about-us{
-	box-shadow: 0 0 25px #B5B5B5;
+	box-shadow: 0 0 1px rgba(0,0,0,0.2);
 	padding: 6px;
-	background-color: #F5F5F5;
+	background-color: #f2f2f2;
 	position: relative;
 	z-index: 1;
 }
@@ -215,7 +215,8 @@ header.down{
 	padding: 30px;
 	margin: 10px ;
 	/*border: 2px solid gray;*/
-	box-shadow: 0 0 7px rgba(0,0,0,0.3);
+	box-shadow: 0 0 1px rgba(0,0,0,0.2);
+	background: #F5F5F5;
 	display: block;
 	transition: 0.2s;
 }
@@ -241,8 +242,8 @@ header.down{
 	font-weight: bold;
 }
 footer{
-	background-color: #56504F; 
-	padding: 30px 0 20px;
+	background-color: #262626; 
+	padding: 20px 0 10px;
 }
 .copyright{
 	color: white;
@@ -336,4 +337,17 @@ footer{
 	width: 50px;
 	margin-top: 20px;
 	height: 40px;
+}
+.owl-carousel .item{
+	position: relative;
+}
+.owl-carousel .item::after{
+	position: absolute;
+	content: '';
+	background: rgba(0,0,0,0.5);
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	z-index: 1;
 }
